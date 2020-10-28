@@ -1,25 +1,32 @@
 # disTime.js
 
-converts UNIX-Timestamps to strings like " 5 days ago " in many languages (
-en, 
-de, 
-it, 
-es, 
-fr, 
-ms, 
-pt, 
-ru, 
-nl, 
-no, 
-in, 
-pl, 
-uk)  
-*coders who like disTime.js maybe also like [parseTime.js](https://github.com/SimonWaldherr/parseTime.js)*
+converts [UNIX-Timestamps](https://en.wikipedia.org/wiki/Unix_time) to strings with the relative date and time (like " 5 days ago ") in many languages:
+de,
+en,
+es,
+fr,
+in,
+it,
+ms,
+nl,
+no,
+oc,
+pl,
+pt,
+ro,
+ru,
+sv,
+tl,
+tr,
+uk ([ISO 639-1 formatted](https://en.wikipedia.org/wiki/ISO_639-1)).   
+*coders who like disTime.js maybe also like [parseTime.js](https://github.com/SimonWaldherr/parseTime.js)*  
+
+if you like, feel free to add more languages. Many thanks to all [contributors](https://github.com/SimonWaldherr/disTime.js/graphs/contributors)
 
 ## about
 
 License:   MIT  
-Version: 0.7.8  
+Version: 0.8.0  
 Date:  10.2017  
 
 ## demo

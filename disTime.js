@@ -1,6 +1,6 @@
 /* * * * * * * * * *
  *   disTime .js   *
- *  Version 0.7.8  *
+ *  Version 0.8.0  *
  *  License:  MIT  *
  * Simon  Waldherr *
  * * * * * * * * * */
@@ -92,6 +92,8 @@ disTimeObject = {
 
     if (systemTime > thisTime) {
       insert += ' ' + language.words.postAgo;
+    } else {
+      insert += ' ' + language.words.postInFuture;
     }
 
     return insert;

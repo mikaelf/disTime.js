@@ -1,6 +1,6 @@
 /* * * * * * * * * *
  *   disTime .js   *
- *  Version 0.7.8  *
+ *  Version 0.8.0  *
  *  License:  MIT  *
  * Simon  Waldherr *
  * * * * * * * * * */
@@ -47,7 +47,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'ago',
       'and': ' ',
-      'inFuture': 'in'
+      'inFuture': 'in',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['Y', 'Y'],
@@ -63,7 +64,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'ago',
       'and': 'and',
-      'inFuture': 'in'
+      'inFuture': 'in',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['year', 'years'],
@@ -79,7 +81,8 @@ var languages = {
       'preAgo': 'vor',
       'postAgo': '',
       'and': 'und',
-      'inFuture': 'in'
+      'inFuture': 'in',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['Jahr', 'Jahren'],
@@ -95,7 +98,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'geleden',
       'and': 'en',
-      'inFuture': 'in'
+      'inFuture': 'in',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['jaar', 'jaar'],
@@ -106,12 +110,30 @@ var languages = {
     minute: ['minuut', 'minuten'],
     second: ['seconde', 'seconden']
   },
+  'id': {
+    words: {
+      'preAgo': '',
+      'postAgo': 'yang lalu',
+      'and': 'dan',
+      'inFuture': 'dalam',
+      'postInFuture': ''
+    },
+    mode: 1,
+    year: ['tahun', 'tahun'],
+    month: ['bulan', 'bulan'],
+    week: ['minggu', 'minggu'],
+    day: ['hari', 'hari'],
+    hour: ['jam', 'jam'],
+    minute: ['menit', 'menit'],
+    second: ['detik', 'detik']
+  },
   'it': {
     words: {
       'preAgo': '',
       'postAgo': 'fa',
       'and': 'e',
-      'inFuture': 'in'
+      'inFuture': 'in',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['anno', 'anni'],
@@ -127,7 +149,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'antes',
       'and': 'y',
-      'inFuture': 'en'
+      'inFuture': 'en',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['año', 'años'],
@@ -143,7 +166,8 @@ var languages = {
       'preAgo': 'il ya',
       'postAgo': '',
       'and': 'et',
-      'inFuture': 'dans '
+      'inFuture': 'dans ',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['an', 'ans'],
@@ -159,7 +183,8 @@ var languages = {
       'preAgo': 'selepas',
       'postAgo': '',
       'and': 'dan',
-      'inFuture': 'akan'
+      'inFuture': 'akan',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['tahun', 'tahun'],
@@ -170,12 +195,30 @@ var languages = {
     minute: ['minit', 'minit'],
     second: ['saat', 'saat']
   },
+  'oc': {
+    words: {
+      'preAgo': 'fa',
+      'postAgo': '',
+      'and': 'e',
+      'inFuture': 'd’aquí',
+      'postInFuture': ''
+    },
+    mode: 1,
+    year: ['an', 'ans'],
+    month: ['mes', 'meses'],
+    week: ['setmana', 'setmanas'],
+    day: ['jorn', 'jorns'],
+    hour: ['ora', 'oras'],
+    minute: ['minuta', 'minutas'],
+    second: ['segonda', 'segondas']
+  },  
   'pt': {
     words: {
       'preAgo': '',
       'postAgo': 'atrás',
       'and': 'e',
-      'inFuture': 'em'
+      'inFuture': 'em',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['ano', 'anos'],
@@ -186,12 +229,30 @@ var languages = {
     minute: ['minuto', 'minutos'],
     second: ['segundo', 'segundos']
   },
+  'ro': {
+    words: {
+      'preAgo': 'acum',
+      'postAgo': '',
+      'and': 'si',
+      'inFuture': 'peste',
+      'postInFuture': ''
+    },
+    mode: 1,
+    year: ['an', 'ani'],
+    month: ['luna', 'luni'],
+    week: ['saptamana', 'saptamani'],
+    day: ['zi', 'zile'],
+    hour: ['ora', 'ore'],
+    minute: ['minut', 'minute'],
+    second: ['secunda', 'secunde']
+  },
   'ru': {
     words: {
       'preAgo': '',
       'postAgo': 'назад',
       'and': 'и',
-      'inFuture': 'через'
+      'inFuture': 'через',
+      'postInFuture': ''
     },
     mode: 2,
     year: ['год', 'года', 'лет'],
@@ -207,7 +268,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'тому',
       'and': '',
-      'inFuture': 'за'
+      'inFuture': 'за',
+      'postInFuture': ''
     },
     mode: 2,
     year: ['рік', 'роки', 'років'],
@@ -218,15 +280,16 @@ var languages = {
     minute: ['хвилину', 'хвилини', 'хвилин'],
     second: ['секунду', 'секунди', 'секунд']
   },
-  'in': {
+  'hi': {
     words: {
       'preAgo': '',
       'postAgo': 'पूर्व',
-      'and': 'तथा',
-      'inFuture': 'में'
+      'and': 'और',
+      'inFuture': 'में',
+      'postInFuture': ''
     },
     mode: 1,
-    year: ['साल', 'वर्षों'],
+    year: ['वर्ष', 'वर्षों'],
     month: ['महीना', 'महीने'],
     week: ['सप्ताह', 'सप्ताह'],
     day: ['दिन', 'दिन'],
@@ -239,8 +302,9 @@ var languages = {
       'preAgo': '',
       'postAgo': 'siden',
       'and': 'og',
-      'inFuture': 'om'
-        },
+      'inFuture': 'om',
+      'postInFuture': ''
+    },
     mode: 1,
     year: ['år', 'år'],
     month: ['måned', 'måneder'],
@@ -255,7 +319,8 @@ var languages = {
       'preAgo': '',
       'postAgo': 'temu',
       'and': 'i',
-      'inFuture': 'za'
+      'inFuture': 'za',
+      'postInFuture': ''
     },
     mode: 1,
     year: ['rok', 'lata'],
@@ -265,5 +330,56 @@ var languages = {
     hour: ['godzina', 'godziny'],
     minute: ['minuta', 'minuty'],
     second: ['sekunda', 'sekundy']
-  }  
+  },
+  'sv': {
+    words: {
+      'preAgo': '',
+      'postAgo': 'sedan',
+      'and': 'och',
+      'inFuture': 'om',
+      'postInFuture': ''
+    },
+    mode: 1,
+    year: ['år', 'år'],
+    month: ['månad', 'månader'],
+    week: ['vecka', 'veckor'],
+    day: ['dag', 'dagar'],
+    hour: ['timme', 'timmar'],
+    minute: ['minut', 'minuter'],
+    second: ['sekund', 'sekunder']
+  },
+  'tl': {
+    words: {
+      'preAgo': '',
+      'postAgo': 'ang nakalipas',
+      'and': 'at',
+      'inFuture': 'sa',
+      'postInFuture': ''
+    },
+    mode: 1,
+    year: ['taon', 'taon'],
+    month: ['buwan', 'buwan'],
+    week: ['linggo', 'linggo'],
+    day: ['araw', 'araw'],
+    hour: ['oras', 'oras'],
+    minute: ['minuto', 'minuto'],
+    second: ['segundo', 'segundo']
+  },
+  'tr': {
+    words: {
+      'preAgo': '',
+      'postAgo': 'önce',
+      'and': 've',
+      'inFuture': '',
+      'postInFuture': 'içinde'
+    },
+    mode: 1,
+    year: ['yıl', 'yıl'],
+    month: ['ay', 'ay'],
+    week: ['hafta', 'hafta'],
+    day: ['gün', 'gün'],
+    hour: ['saat', 'saat'],
+    minute: ['dakika', 'dakika'],
+    second: ['saniye', 'saniye']
+  }
 };

@@ -45,15 +45,21 @@
       <optgroup label="supported">
         <option>en</option>
         <option>de</option>
+        <option>id</option>
         <option>it</option>
         <option>es</option>
         <option>fr</option>
         <option>ms</option>
         <option>pt</option>
+        <option>ro</option>
         <option>ru</option>
         <option>uk</option>
         <option>no</option>
+        <option>oc</option>        
         <option>in</option>
+        <option>tl</option>
+        <option>tr</option>
+        <option>sv</option>
       </optgroup>
     </select>
     Details:
